@@ -1,0 +1,243 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: "Open Sans", "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: -2px 8px 8px -8px rgba(34, 60, 80, 0.2);
+}
+nav .nav-left img {
+  width: 8%;
+  vertical-align: middle;
+}
+nav .nav-left button {
+  padding: 1px 10px 5px 10px;
+  background-color: #e0e0de;
+  border: 1px solid #c4c4c4;
+  margin: 5px 20px 5px 0;
+  vertical-align: middle;
+  font-size: 32px;
+}
+nav .nav-left a span {
+  color: black;
+  font-size: 1.171875rem;
+}
+nav .nav-right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+nav .nav-right .messages, nav .nav-right .notifications {
+  font-size: 20px;
+  color: #919191;
+}
+nav .nav-right button {
+  color: #0075a3;
+}
+nav .nav-right button img {
+  width: 30px;
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+section {
+  max-width: 98vw;
+  margin: 0 auto;
+}
+section h1 {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 20px 10px;
+  border: 1px solid #919191;
+}
+section article {
+  border: 1px solid #919191;
+  padding: 10px;
+  margin-top: 20px;
+}
+section article h2 {
+  font-size: 25px;
+  font-weight: 300;
+}
+section article .select-group {
+  margin-top: 100px;
+}
+section article .select-group select {
+  border: 1px solid #919191;
+  padding: 5px;
+}
+section article .select-group span {
+  font-size: 25px;
+  font-weight: 300;
+}
+section article .filter-first-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 15px;
+}
+section article .filter-first-name button {
+  margin: 1px;
+  color: #0075a3;
+  border: 1px solid #919191;
+  padding: 0 2px;
+  font-weight: 500;
+  width: 25px;
+}
+section article .filter-first-name .first-name-all {
+  display: block;
+}
+section article .filter-second-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 15px;
+}
+section article .filter-second-name button {
+  margin: 1px;
+  color: #0075a3;
+  border: 1px solid #919191;
+  padding: 0 2px;
+  font-weight: 500;
+  width: 25px;
+}
+section article .filter-second-name .second-name-all {
+  display: block;
+}
+
+.table {
+  margin-top: 30px;
+}
+
+table.iksweb {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  height: auto;
+}
+
+table.iksweb, table.iksweb td, table.iksweb th {
+  border: 1px solid #595959;
+}
+
+table.iksweb td, table.iksweb th {
+  padding: 3px;
+  font-size: 13px;
+  width: 40px;
+  height: 35px;
+}
+
+table.iksweb th {
+  color: black;
+  font-weight: 900;
+  text-align: start;
+}
+
+table.iksweb .table-color-blue {
+  color: #0075a3;
+  font-weight: 900;
+  text-align: start;
+}
+
+table.iksweb .main-text-table {
+  color: black;
+  font-weight: 900;
+  text-align: start;
+}
+
+.info {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/oop-style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <button class="burger">&#9776;</button>
+            <a href="#">
+                <img src="../assets/logo.png">
+                <span>Astana IT University</span>
+            </a>
+        </div>
+        <div class="nav-right">
+            <button class="notifications">	&#128365;</button>
+            <button class="messages">&#x1F5E8;</button>
+            <button>
+                <span>Didar Yedilkhan</span> 
+                <img src="../assets/user.svg">
+                <span> ▼</span>
+            </button>
+
+            <div class="info">
+                <a href="#">Course name: OOP</a>
+                <a href="#">Altynbek Seitenov</a>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <h1>Object-Oriented Programming | Didar Yedilkhan: View: Preferences: Grader report</h1>
+        <article>
+            <h2>Grader report</h2>
+            <div class="select-group">
+                <span>Separate groups</span>
+                <select name="" id="">
+                    <option value="all" selected>All participants</option>
+                    <option value="cs05" >CS-2205</option>
+                    <option value="cs06" >CS-2206</option>
+                </select>
+                <br>
+                <span id="group-name">All participants: </span><span id="participants-number">99</span>/<span id="max-participants-number">99</span>
+            </div>
+
+            <div class="filter-first-name">
+                <p>First Name</p>
+                <button class="first-name-all">All</button>
+                <div>
+                    <button class="first-name-letters">A</button><button class="first-name-letters">B</button><button class="first-name-letters">C</button><button class="first-name-letters">D</button><button class="first-name-letters">E</button><button class="first-name-letters">F</button><button class="first-name-letters">G</button><button class="first-name-letters">H</button><button class="first-name-letters">I</button><button class="first-name-letters">J</button><button class="first-name-letters">K</button><button class="first-name-letters">L</button><button class="first-name-letters">M</button>
+                </div>
+                <div>
+                    <button class="first-name-letters">N</button><button class="first-name-letters">O</button><button class="first-name-letters">P</button><button class="first-name-letters">Q</button><button class="first-name-letters">R</button><button class="first-name-letters">S</button><button class="first-name-letters">T</button><button class="first-name-letters">U</button><button class="first-name-letters">V</button><button class="first-name-letters">W</button><button class="first-name-letters">X</button><button class="first-name-letters">Y</button><button class="first-name-letters">Z</button>
+                </div>
+            </div>
+
+            <div class="filter-second-name">
+                <p>Surname</p>
+                <button class="second-name-all">All</button>
+                <div>
+                    <button class="second-name-letters">A</button><button class="second-name-letters">B</button><button class="second-name-letters">C</button><button class="second-name-letters">D</button><button class="second-name-letters">E</button><button class="second-name-letters">F</button><button class="second-name-letters">G</button><button class="second-name-letters">H</button><button class="second-name-letters">I</button><button class="second-name-letters">J</button><button class="second-name-letters">K</button><button class="second-name-letters">L</button><button class="second-name-letters">M</button>
+                </div>
+                <div>
+                    <button class="second-name-letters">N</button><button class="second-name-letters">O</button><button class="second-name-letters">P</button><button class="second-name-letters">Q</button><button class="second-name-letters">R</button><button class="second-name-letters">S</button><button class="second-name-letters">T</button><button class="second-name-letters">U</button><button class="second-name-letters">V</button><button class="second-name-letters">W</button><button class="second-name-letters">X</button><button class="second-name-letters">Y</button><button class="second-name-letters">Z</button>
+                </div> 
+            </div>
+
+
+            <div class="table">
+                <table class="iksweb">
+                    <tbody>
+                        <tr>
+                            <td colspan="2" rowspan="2"></td>
+                            <th class="main-text-table" colspan="9">Object-Oriented Programming | Didar Yedilkhan</th>
+                        </tr>
+                        <tr>
+                            <th class="main-text-table" colspan="3">Register(not to edit)</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th class="table-color-blue"><button id="filter">Fullname <span id="filter-icon1">&#x23F6;</span> <span id="filter-icon-2">&#x23F7;</span></button></th>
+                            <th class="table-color-blue"><button>Email <span id="filter-icon1">&#x23F6;</span> <span id="filter-icon-2">&#x23F7;</span></button></th>
+                            <th><button>Final Mark <span id="filter-icon1">&#x23F6;</span> <span id="filter-icon-2">&#x23F7;</span></button></th>
+                            <th><button>Register Midterm <span id="filter-icon1">&#x23F6;</span> <span id="filter-icon-2">&#x23F7;</span></button></th>
+                            <th><button>Register Endterm <span id="filter-icon1">&#x23F6;</span> <span id="filter-icon-2">&#x23F7;</span></button></th>
+                            <th><button>Lab 1 <span id="filter-icon1">&#x23F6;</span> <span id="filter-icon-2">&#x23F7;</span></button></th>
+                            <th><button>Lab 2 <span id="filter-icon1">&#x23F6;</span> <span id="filter-icon-2">&#x23F7;</span></button></th>
+                            <th><button>Lab 3 <span id="filter-icon1">&#x23F6;</span> <span id="filter-icon-2">&#x23F7;</span></button></th>
+                            <th><button>Lab 4 <span id="filter-icon1">&#x23F6;</span> <span id="filter-icon-2">&#x23F7;</span></button></th>
+                            <th><button>Assignment 1 <span id="filter-icon1">&#x23F6;</span> <span id="filter-icon-2">&#x23F7;</span></button></th>
+                            <th><button>Assignment 2 <span id="filter-icon1">&#x23F6;</span> <span id="filter-icon-2">&#x23F7;</span></button></th>
+                        </tr>
+                        <tr>
+                            <td>Miras Shynar</td>
+                            <td>example@gmail.com</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
