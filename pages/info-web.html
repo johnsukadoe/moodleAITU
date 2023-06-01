@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/oop-style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <button class="burger">&#9776;</button>
+            <a href="#">
+                <img src="../assets/logo.png">
+                <span>Astana IT University</span>
+            </a>
+        </div>
+        <div class="nav-right">
+            <button class="notifications"> &#128365;</button>
+            <button class="messages">&#x1F5E8;</button>
+            <button id="teacher">
+                <span>Seitenov Altynbek</span>
+                <img src="../assets/user.svg">
+                <span> ▼</span>
+            </button>
+
+            <div class="info ">
+                <div>
+                    <a href="#">About the course</a>
+                    <a href="/pages/web-index.html">Grader Report</a>
+                    <a href="/pages/oop-index.html">Didar Yedilkhan</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <h1>Web Technologies (Front-end) | Seitenov Altynbek: View: Preferences: Grader report</h1>
+        <article>
+            <div class="announcement" style="border: 1px solid gray; padding: 10px;">
+                <h2 style="margin-bottom: 20px;">Announcements</h2>
+                <span>General news and announcements</span>
+                <span>Separate groups: CS-2205</span> 
+                <span>(No announcements have been posted yet.)</span>    
+            </div>
+
+            <div class="announcement">
+               <h2 style="margin: 20px 0;">Teams meeting</h2>
+                <span>
+                    Click <a href="#">https://teams.microsoft.com/l/meetup-join/19:meeting_YmQyM2JmYjAtODMzNy00ODk4LWI4MjMtYTliYjAxNTY2Nzhj@thread.v2/0?context=%7B%22Tid%22:%22158f15f3-83e0-4906-824c-69bdc50d9d61%22,%22Oid%22:%220aaa20d4-3151-4252-806b-d7e9d20f1762%22%7D</a> link to open resource.
+                </span>            
+            </div>
+
+            <div class="announcement">
+                <h2 style="margin: 20px 0;">learn.astanait.edu.kz</h2> 
+                <span>
+                    Click <a href="#"> https://learn.astanait.edu.kz/courses/course-v1:AITU+JAVA01+2022_C2/course/ </a>link to open resource.
+                </span>
+            </div>
+
+            <div class="announcement">
+                <h2 style="margin: 20px 0;">JetBrains</h2> 
+               <span>Click <a href="">https://www.jetbrains.com/shop/eform/students </a> link to open resource.</span> 
+            </div>
+
+            <div class="announcement">
+                <h2 style="margin: 20px 0;">IntelliJ IDEA</h2> 
+                <span>Click <a href="">https://www.jetbrains.com/idea/ </a> link to open resource.</span> 
+            </div>
+
+            <div class="announcement">
+                <h2 style="margin: 20px 0;">GitHub</h2> 
+                <span>Click <a href="">https://github.com/ </a> link to open resource.</span> 
+            </div>
+        </article>
+    </section>
+
+    <script>
+        
+        const teacherBtn = document.querySelector('#teacher');
+
+        teacherBtn.addEventListener('click', handleButton);
+
+        function handleButton(){
+            const infoAboutTeacher = document.querySelector('.info');
+
+            infoAboutTeacher.classList.toggle( "infoActive");
+        }
+
+
+    </script>
+</body>
+
+</html>
